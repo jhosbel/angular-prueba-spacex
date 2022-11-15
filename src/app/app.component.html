@@ -1,0 +1,11 @@
+<div class="wrapper">
+  <div class="gallery">
+    <div class="item" *ngFor="let i of data">
+      <h1>{{i.name}}</h1>
+      <p>{{i.description}}</p>
+      <div class="imgs">
+        <img [src]="img" alt="" *ngFor="let img of i.flickr_images">
+      </div>
+    </div>
+  </div>
+</div>
